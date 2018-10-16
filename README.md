@@ -1,5 +1,7 @@
 # React-Redux-Rails
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Naturalclar/react-redux-rails.svg)](https://greenkeeper.io/)
+
 A Boilerplate for React with Redux and Rails 5.1, using the `webpacker` gem.
 
 ## Demo
