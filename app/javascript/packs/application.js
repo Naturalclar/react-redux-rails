@@ -7,12 +7,12 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
-import React from 'react';
-import { render } from 'react-dom';
-import { Provider } from 'react-redux';
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
 import { createGlobalStyle } from 'styled-components'
-import configureStore from '../store';
-import App from '../App';
+import configureStore from '../store'
+import App from '../App'
 
 const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
@@ -24,9 +24,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
-`;
+`
 
-const store = configureStore();
+const store = configureStore()
 
 render(
   <Provider store={store}>
@@ -34,7 +34,6 @@ render(
       <GlobalStyle />
       <App />
     </React.Fragment>
-  </Provider>
-  ,
+  </Provider>,
   document.body.appendChild(document.createElement('div')),
-);
+)
